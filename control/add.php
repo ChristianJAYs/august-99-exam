@@ -2,7 +2,6 @@
 
 	include_once "../connection.php";
 
-	// to protect the data
 	$title = mysqli_real_escape_string($conn,$_POST['title']);
 	$isbn = mysqli_real_escape_string($conn,$_POST['isbn']);
 	$author = mysqli_real_escape_string($conn,$_POST['author']);
@@ -10,7 +9,6 @@
 	$year_publish = mysqli_real_escape_string($conn,$_POST['year_publish']);
 	$category = mysqli_real_escape_string($conn,$_POST['category']);
 
-	// echo $title;
 
 	if (strlen($year_publish) != 4) {
 		header("Location: ../homepage.php?addBook=failed");

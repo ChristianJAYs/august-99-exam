@@ -81,7 +81,7 @@
                 <td><input type="text" name="publisher" value="<?php echo $row['publisher'];?>"></td>
             </tr>
             <tr> 
-                <td>YEar Published</td>
+                <td>Year Published</td>
                 <td><input type="number" name="year_publish" value="<?php echo $row['year_publish'];?>"></td>
             </tr>
             <tr> 
